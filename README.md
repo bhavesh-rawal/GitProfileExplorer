@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# GitHub Profile Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+GitHub Profile Explorer is a simple web application built using **React**, **TypeScript**, and **Vite** that allows users to search for GitHub profiles using the [GitHub API](https://api.github.com/users/). The app displays the profile details, including the user's avatar, name, bio, location, and more.
 
-Currently, two official plugins are available:
+## Features
+- **Search for GitHub users**: Users can search for any GitHub username to fetch their profile details.
+- **User Profile Display**: Displays the user's avatar, name, bio, location, followers, following, and public repositories.
+- **Dark Mode**: Toggle between dark and light mode for the UI.
+- **Error Handling**: Displays an error message if the user is not found.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that provides static typing.
+- **Vite**: A fast development server and build tool.
+- **GitHub API**: Used to fetch public user data from GitHub.
 
-## Expanding the ESLint configuration
+## How it Works
+1. **User Search**: Users can enter a GitHub username in the search bar.
+2. **Fetch Profile**: The app makes an API call to `https://api.github.com/users/{username}` to fetch the user data.
+3. **Display Data**: If the user is found, their profile data (name, avatar, bio, etc.) will be displayed. If not, an error message will show.
+4. **Dark Mode Toggle**: A dark mode option is available for a better user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To run the project locally:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/github-profile-explorer.git
