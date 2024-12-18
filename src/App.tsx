@@ -107,9 +107,7 @@ const ProfileSearch = () => {
                 placeholder="Enter a GitHub username..."
                 required
               />
-              {/* <div className="error">
-              <p id="no-results">{error ? error : null}</p>
-            </div> */}
+
               <button className="btn-search" id="submit" onClick={handleSearch}>
                 Search
               </button>
