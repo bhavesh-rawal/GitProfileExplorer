@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import "./App.css"; // Assuming you have your styles here
 
-// Importing images for icons
-import sunIcon from "./assets/images/sun-icon.svg";
-import moonIcon from "./assets/images/moon-icon.svg";
 import locationIcon from "./assets/images/location-icon.svg";
 import websiteIcon from "./assets/images/website-icon.svg";
 import twitterIcon from "./assets/images/twitter-icon.svg";
 import companyIcon from "./assets/images/company-icon.svg";
 import { GitHubUser } from "./App.props";
+import ToggleSwitch from "./ToggleSwitch";
 
 const months = [
   "Jan",
@@ -93,16 +91,8 @@ const ProfileSearch = () => {
     <div className={`container ${darkMode ? "dark" : "light"}`}>
       <header className="header">
         <h1 className="title">Github Profile Explorer</h1>
-        <div id="btn-mode" onClick={handleDarkModeToggle}>
-          <p id="mode-text">{darkMode ? "LIGHT" : "DARK"}</p>
-          <div className="icon-container">
-            <img
-              id="mode-icon"
-              src={darkMode ? sunIcon : moonIcon}
-              alt="mode icon"
-            />
-          </div>
-        </div>
+
+        <ToggleSwitch flag={darkMode} onChange={handleDarkModeToggle} />
       </header>
 
       <main>
