@@ -91,7 +91,6 @@ const ProfileSearch = () => {
     <div className={`container ${darkMode ? "dark" : "light"}`}>
       <header className="header">
         <h1 className="title">Github Profile Explorer</h1>
-
         <ToggleSwitch flag={darkMode} onChange={handleDarkModeToggle} />
       </header>
 

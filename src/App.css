@@ -62,7 +62,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 #btn-mode {
@@ -191,6 +190,7 @@ body {
 .title {
   font-size: 2rem;
   margin-bottom: 18px;
+  width: 79%;
 }
 
 .stat-value {
@@ -349,7 +349,103 @@ body {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
 
+  .searchbar-container {
+    padding: 8px;
+  }
+
+  #input {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #input::placeholder {
+    font-size: 16px;
+  }
+
+  .btn-search {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  #app {
+    gap: 16px;
+  }
+
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-header {
+    margin-bottom: 12px;
+  }
+
+  #avatar {
+    width: 100px; 
+  }
+
+  .profile-content {
+    gap: 20px;
+  }
+
+  .profile-info-wrapper {
+    margin-left: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile-name h2 {
+    font-size: 20px;
+  }
+
+  #user {
+    font-size: 14px;
+  }
+
+  #date {
+    font-size: 13px;
+  }
+
+  #bio {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .error {
+    font-size: 14px;
+    top: -20px;
+  }
+
+  .profile-stats-wrapper {
+    padding: 12px 20px;
+  }
+
+  .profile-stat {
+    text-align: center;
+  }
+
+  .stat-title {
+    font-size: 12px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .profile-bottom-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .profile-info {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .container {
@@ -428,8 +524,9 @@ body {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 64px;
+  width: 19%;
   height: 34px;
+  max-width: 65px;
 }
 
 .switch input {
