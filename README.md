@@ -1,7 +1,5 @@
 # GitHub Profile Explorer
 
-## Screenshot
-
 ![GitHub Profile Screenshot](./src/assets/images/GitHubProfileExplorer.png)
 
 ## Description
